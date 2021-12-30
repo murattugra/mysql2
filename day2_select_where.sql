@@ -182,7 +182,41 @@ where isim like '_e%';
  
    select * from personel
 where isim like '_e%y%'; 
+
+/* -----------------------------------------------------------------------------
+  ORNEK15:  isminde a harfi olmayanları listeleyiniz 	****NOT LIKE****
+ -----------------------------------------------------------------------------*/
+    select * from personel
+where isim not like '%a%'; 
+
  
+ /* -----------------------------------------------------------------------------
+  ORNEK13:  ismi A ile başlamayanları listeleyiniz
+ -----------------------------------------------------------------------------*/    
+    SELECT * FROM personel
+    WHERE isim NOT LIKE 'A%';
+/* -----------------------------------------------------------------------------
+  ORNEK14:  ismi n ile bitmeyenleri listeleyiniz
+ -----------------------------------------------------------------------------*/
+    SELECT * FROM personel
+    WHERE isim NOT LIKE '%n';
+ 
+ 
+ /* -----------------------------------------------------------------------------
+  ORNEK18: maaşı 5 haneli olanları listeleyiniz
+ -----------------------------------------------------------------------------*/     
+ 
+ select * from personel
+ where maas like '_____';
+ 
+ 
+ 
+ /* -----------------------------------------------------------------------------
+  ORNEK20: 1. harfi A ve 7.harfi A olan perspneli listeleyiniz.
+ -----------------------------------------------------------------------------*/  
+  
+ select * from personel
+ where isim like 'a_____a%';
  
  
  
