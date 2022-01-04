@@ -65,10 +65,10 @@ use sys;
     select*from ogrenciler;
  
  /* ----------------------------------------------------------------------------
-  ORNEK6: id'si 123, 125 ve 126 olanları silelim.
+  ORNEK6: id'si 123, 125 veya 126 olanları silelim.
  -----------------------------------------------------------------------------*/     
     
-    delete from ogrenciler where id in (123,125,126);
+    delete from ogrenciler where id in ('123','125','126');
     select*from ogrenciler;
     
 /* ----------------------------------------------------------------------------
@@ -87,7 +87,7 @@ use sys;
 /* ======================== DELETE - TRUNCATE - DROP ============================   
   
   1-) TRUNCATE komutu DELETE komutu gibi bir tablodaki verilerin tamamını siler.
-    Ancak, seçmeli silme yapamaz. Çünkü Truncate komutu DML değil DDL komutudur.*/ 
+    Ancak, seçmeli silme yapamaz. Çünkü Truncate kom utu DML değil DDL komutudur.*/ 
          TRUNCATE TABLE ogrenciler;  -- doğru yazım
        
     

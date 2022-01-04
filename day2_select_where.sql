@@ -1,10 +1,10 @@
 -- ========SELECT-WHERE========
 use sys; -- bu farkli sys gibi dosyalar varsan bunu alir
-CREATE TABLE ogrenciler(
+create TABLE ogrenciler(
 id int,
 isim varchar(45),
-adres VARCHAR(100),
-sinav_notu int
+adres varchar(100),
+sinav_notu int 
 );
 
     INSERT INTO ogrenciler VALUES(123, 'Ali Can', 'Ankara',75);
@@ -303,7 +303,7 @@ where isim not like '%a%';
   olanlari) listeleyeniz
  -----------------------------------------------------------------------------*/ 
  
-	Select * from kelimeler
+	Select * from kelimeler 
    -- where kelime like 'h_t';  -- bu şekilde h ve t'den byk kçk olan hepsini getirir..!
 	where REGEXP_LIKE(kelime,'h[a-zA-Z0-9]t','c');
     
@@ -332,7 +332,7 @@ where isim not like '%a%';
   -- where REGEXP_LIKE(kelime, '^a|^s');    
 	where REGEXP_LIKE(kelime, '^[as]'); 
 
-
+ 
 /* -----------------------------------------------------------------------------
   ORNEK30: içerisinde en az 2 adet oo barıdıran kelimelerin tüm bilgilerini 
   listeleyiniz.

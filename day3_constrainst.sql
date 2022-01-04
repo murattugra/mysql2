@@ -11,8 +11,16 @@
     CHECK - Bir sutundaki tüm verilerin belirlenen özel bir şartı sağlamasını garanti eder. 
     DEFAULT - Herhangi bir değer atanamadığında Başlangıç değerinin atanmasını sağlar.
  ========================================================================================*/ 
- 
- INSERT INTO calisanlar VALUES( '10002', 'Mehmet Yılmaz' ,12000, '2018-04-14');
+ CREATE TABLE calisanlar
+    (
+        id CHAR(5) PRIMARY KEY, -- not null+ unique
+        isim VARCHAR(50) UNIQUE,
+        maas int NOT NULL,
+        ise_baslama DATE
+    );
+
+INSERT INTO calisanlar VALUES( '10002', 'Mehmet Yılmaz' ,12000, '2018-04-14'); -- constructorda oldugu gibi parametreleri tam girmeliyim. eksik giremem.
+                                                                   -- eksik gireceksem eger , girecek oldugum parametreleri belirtmeliyim.
 INSERT INTO calisanlar VALUES('10008', null, 5000, '2018-04-14');
 INSERT INTO calisanlar VALUES('10010', null, 5000, '2018-04-14');-- 2. kez null benzersizlik kisitlamasini bozmaz
 INSERT INTO calisanlar VALUES('10004', 'Veli Han', 5000, '2018-04-14');
