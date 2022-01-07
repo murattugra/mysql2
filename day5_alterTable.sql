@@ -26,7 +26,7 @@
     INSERT INTO personel VALUES(567890123, 'Mehmet Ozturk', 'Ankara', 7000, 'Tofas');
     INSERT INTO personel VALUES(456715012, 'Veli Sahin', 'Ankara', 4500, 'Ford');
     
-    
+    select * from personel;
     /* -----------------------------------------------------------------------------
   ORNEK1: personel tablosuna ulke_isim adinda ve default degeri 'Turkiye' olan 
   yeni bir sutun ekleyiniz.
